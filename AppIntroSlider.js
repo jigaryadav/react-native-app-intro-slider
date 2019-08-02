@@ -189,11 +189,12 @@ export default class AppIntroSlider extends React.Component {
                 onPress={() => this._onPaginationPress(i)}
               >
                 <Image
+                  resizeMode="contain"
                   style={[
-                    { height: 20, width: 20 },
-                    this._rtlSafeIndex(i) === this.state.activeIndex
-                      ? this.props.activeDotStyle
-                      : {}
+                    { height: 20, width: 20 }
+                    // this._rtlSafeIndex(i) === this.state.activeIndex
+                    //   ? this.props.activeDotImageStyle
+                    //   : {}
                   ]}
                   source={
                     this._rtlSafeIndex(i) === this.state.activeIndex
